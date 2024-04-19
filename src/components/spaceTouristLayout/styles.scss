@@ -1,0 +1,317 @@
+@import "../../assets/styles/variables";
+
+section {
+    display: flex;
+    // justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+
+    overflow: hidden;
+
+
+    .content-wrapper {
+        .home {
+            background-image: url(../../assets/images/home/background-home-desktop.jpg);
+            background-size: cover;
+            // width: 100%;
+            position: relative;
+            z-index: 1;
+
+
+            .home-text__header {
+
+                h1 {
+                    font-size: 4rem;
+                    font-weight: 400;
+                    letter-spacing: .2rem;
+                    text-transform: uppercase;
+
+                    small {
+                        font-size: 10rem;
+                    }
+                }
+
+                p {
+                    font-size: 2rem;
+                    font-weight: 400;
+                    letter-spacing: 0.2rem;
+                    margin-top: 2rem;
+                }
+
+                @media screen and (max-width:786px) {
+                    text-align: center;
+                }
+            }
+
+            .home-link__wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+                width: 20rem;
+                height: 20rem;
+                border-radius: 50%;
+                background: $white-000;
+                position: relative;
+                cursor: pointer;
+                transition: all 0.5s ease-in-out;
+
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 200%;
+                    height: 200%;
+                    border-radius: 50%;
+                    background: grey;
+                    z-index: -11;
+
+                    opacity: 0;
+                }
+
+                &:hover::before {
+                    opacity: 1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .home-link__explore {
+                    color: black;
+                    text-decoration: none;
+                    font-size: 4rem;
+                    font-style: italic;
+                    font-weight: 500;
+                }
+
+            }
+
+
+
+        }
+
+        .destination {
+            background-image: url(../../assets/images/destination/background-destination-desktop.jpg);
+            background-size: cover;
+
+            .destination-names {
+
+                .destination-nav-wrapper {
+                    .destination-nav {
+                        color: $text-color ;
+                        font-style: normal;
+                        font-weight: 500;
+                        letter-spacing: .2rem;
+                        font-size: 2rem;
+                        list-style-type: none;
+
+                        .nav-items {
+                            text-decoration: none;
+                        }
+
+                        .active {
+                            color: $text-color !important;
+                        }
+                    }
+
+                    .moon {
+                        .moon-head {
+                            font-size: $font-size-lg + 9rem;
+                            letter-spacing: 2rem;
+                            font-weight: 700;
+                        }
+
+                        .moon-about {
+                            letter-spacing: .2rem;
+                            line-height: 2;
+                        }
+
+                        .moon-avg {
+                            .moon-avg__distance {
+                                p {
+                                    letter-spacing: .2rem;
+                                    text-transform: uppercase;
+                                }
+
+                                h2 {
+                                    font-size: $font-size-lg + 1rem;
+                                }
+                            }
+
+                            .moon-avg__travel {
+
+                                // h4 {
+                                //     font-size: $font-size-lg + 1rem;
+                                // }
+                                p {
+                                    letter-spacing: .2rem;
+                                    text-transform: uppercase;
+                                }
+
+                                h3 {
+                                    font-style: normal;
+                                    font-size: $font-size-lg + 1rem;
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+        .crew {
+            background-image: url(../../assets/images/crew/background-crew-desktop.jpg);
+            background-size: cover;
+
+            .about-crew {
+                .about-crew__text {
+                    h1 {
+                        opacity: 50%;
+                        letter-spacing: .2rem;
+                        font-size: 4rem;
+                        font-style: normal;
+                        font-weight: 400;
+                    }
+
+                    h2 {
+                        font-size: 5rem;
+                        font-weight: 500;
+                        font-style: normal;
+                        letter-spacing: .2rem;
+                    }
+
+                    p {
+                        font-size: 2rem;
+                        font-weight: 400;
+                        letter-spacing: 0.2rem;
+                        line-height: 2;
+                    }
+                }
+
+                .about-crew_dots {
+                    .active {
+                        background-color: grey;
+                    }
+
+                    span {
+                        height: 2rem;
+                        width: 2rem;
+                        background-color: $white-000;
+                        border-radius: 50%;
+                        cursor: pointer;
+                        transition: all 0.5s ease-in-out;
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            width: 2rem;
+                            height: 2rem;
+                            border-radius: 50%;
+                            background: grey;
+                            // z-index: -11;
+
+                            opacity: 0;
+                        }
+
+                        &:hover::before {
+                            opacity: 1;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+
+        .technology {
+            background-image: url(../../assets/images/technology/background-technology-desktop.jpg);
+            background-size: cover;
+            display: flex;
+            width: 100%;
+
+
+
+            .about-technology {
+                .about-technology__text {
+                    h1 {
+                        opacity: 50%;
+                        letter-spacing: .2rem;
+                        font-size: 4rem;
+                        font-style: normal;
+                        font-weight: 400;
+                    }
+
+                    h2 {
+                        font-size: 5rem;
+                        font-weight: 500;
+                        font-style: normal;
+                        letter-spacing: .2rem;
+                    }
+
+                    p {
+                        font-size: 2rem;
+                        font-weight: 400;
+                        letter-spacing: 0.2rem;
+                        line-height: 2;
+                        width: 50rem;
+                    }
+                }
+
+                .about-technology_dots {
+                    .active {
+                        background-color: $white-000;
+                        color: black;
+                    }
+
+                    span {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 8rem;
+                        width: 8rem;
+                        background-color: "transparent";
+                        border: 2px solid $white-000;
+                        border-radius: 50%;
+                        cursor: pointer;
+                        transition: all 0.5s ease-in-out;
+                        color: $white-000;
+                        font-size: 4rem;
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            width: 8rem;
+                            height: 8rem;
+                            border-radius: 50%;
+                            // background-color: $white-000;
+                            // color: black;
+                            // z-index: -11;
+
+                            opacity: 0;
+                        }
+
+                        &:hover::before {
+                            opacity: 1;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: blue;
+                        }
+                    }
+                }
+
+                // .tech-picture {
+                //     .pic {
+                //         // height: 100%;
+                //     }
+                // }
+
+
+            }
+        }
+    }
+}
