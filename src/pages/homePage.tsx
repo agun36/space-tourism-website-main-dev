@@ -10,7 +10,7 @@ export const HomePage = () => {
                 <Navigation />
             </div>
             <div className='m-auto d-flex flex-column flex-md-row flex-lg-row justify-content-center justify-content-md-center justify-content-lg-center align-items-center align-items-md-center align-items-lg-center gap-8'>
-                <div className='home-text__header w-50'>
+                <div className='home-text__header w-100 w-md-50'>
                     <h1 className='text-texts-color'>
                         so, you want to tarvel to <br /> <small className='text-white-000'>
                             space
