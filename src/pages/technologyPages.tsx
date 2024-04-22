@@ -15,7 +15,7 @@ export const TechnologyPages = () => {
             <div className='mt-sm-0 mt-md-5 px-4'>
                 <Navigation />
             </div>
-            <div className='row align-items-center justify-content-center  justify-content-md-center  mx-auto '>
+            <div className='row row-col-1 align-items-center justify-content-center  justify-content-md-center  mx-auto '>
                 <div className='text-white-000 my-8 mt-md-8 col-12 d-flex justify-content-center justify-content-sm-start justify-content-md-start px-4'>
                     <h1 className='d-flex gap-2'><span className='opacity-50'>03</span>Technology Pages</h1>
                 </div>

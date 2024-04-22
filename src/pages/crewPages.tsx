@@ -11,12 +11,12 @@ export const CrewPages = () => {
     };
 
     return (
-        <div className='crew d-flex flex-column  px-md-4 px-sm-0 min-vh-100 max-vh-auto'>
+        <div className='crew row  px-md-4 px-sm-0 min-vh-100 max-vh-auto'>
 
-            <div className='mt-sm-0 mt-md-5 px-4'>
+            <div className='mt-sm-0 mt-md-5 px-4 col-12'>
                 <Navigation />
             </div>
-            <div className="row align-items-center justify-content-md-center  mx-auto">
+            <div className="col-12 row align-items-center justify-content-md-center  mx-auto">
                 <div className='mt-8 mt-md-8 col-12 d-flex justify-content-center justify-content-sm-start justify-content-md-start px-4'>
                     <h1 className='text-white-000 d-flex gap-3 text-uppercase'><span className='opacity-50'>00</span>meet your crew</h1>
                 </div>
@@ -39,7 +39,7 @@ export const CrewPages = () => {
 
                     </div>
                     <div className='col-sm-12 col-md-7 d-flex justify-content-center'>
-                        <img src={currentCrew.images.png} alt="Crew member" className='img-fluid' />
+                        <img src={currentCrew.images.png} alt="Crew member" />
                     </div>
                 </div>
             </div>
