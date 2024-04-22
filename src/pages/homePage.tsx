@@ -5,12 +5,12 @@ import { Navigation } from '../components/navigation';
 export const HomePage = () => {
 
     return (
-        <div className='home row   px-md-4 px-sm-0 min-vh-100 max-vh-auto'>
-            <div className='mt-md-5 col-12'>
+        <div className='home row  px-md-4 px-sm-0 min-vh-100'>
+            <div className='mt-sm-0 mt-md-5 px-4 col-12'>
                 <Navigation />
             </div>
-            <div className='col-12 container  row justify-content-center align-items-center'>
-                <div className='home-text__header   col-md-6 mx-auto text-sm-center'>
+            <div className='row align-items-center justify-content-md-center  mx-auto col-12'>
+                <div className='home-text__header   col-md-6 mx-auto text-sm-center text-md-start'>
                     <h1 className='text-texts-color'>
                         so, you want to tarvel to <br /> <small className='text-white-000'>
                             space
