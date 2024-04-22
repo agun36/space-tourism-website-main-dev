@@ -1,8 +1,8 @@
 @import "../../assets/styles/variables";
 
 .nav-layout {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
 
     .nav-layout__wrapper {
 
@@ -22,9 +22,15 @@
                     font-weight: 400;
                     text-transform: uppercase;
                     letter-spacing: .2rem;
-                    padding-left: 3rem !important;
-                    padding-right: 3rem !important;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
 
+                    @media (min-width: 576px) and (max-width: 768.98px) {
+                        /* styles for tablets go here */
+                        font-size: 1.3rem;
+                        font-weight: 300;
+                        color: red !important;
+                    }
 
                     &:hover {
                         color: $white-000;

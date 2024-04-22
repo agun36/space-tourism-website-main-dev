@@ -62,4 +62,32 @@ body {
     .font-size-#{$name} {
         font-size: $size;
     }
+
+    @media (min-width: 576px) {
+
+        // sm
+        .font-size-sm-#{$name} {
+            font-size: $size;
+        }
+    }
+
+    @media (min-width: 768px) {
+
+        // md
+        .font-size-md-#{$name} {
+            font-size: $size;
+        }
+    }
+
+    // Add more media queries for other sizes (lg, xl, etc.) if needed
+}
+
+@media (min-width: 968px) {
+    .w-md-auto {
+        width: auto !important;
+    }
+
+    .w-sm-wide {
+        width: 100% !important;
+    }
 }

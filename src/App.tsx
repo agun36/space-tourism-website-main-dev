@@ -5,10 +5,7 @@ import { SpaceTourism } from "./components/spaceTouristLayout/spaceTouristLayout
 import { DestinationPages } from "./pages/destinationPages";
 import { CrewPages } from "./pages/crewPages";
 import { TechnologyPages } from "./pages/technologyPages";
-import { MoonPages } from "./pages/moonPages";
-import { MarsPages } from "./pages/marsPages";
-import { EuropaPages } from "./pages/europaPages";
-import { TitanPages } from "./pages/titanPages";
+
 
 interface AppProps {
   children: ReactNode;
@@ -22,13 +19,7 @@ export const App: React.FC<AppProps> = () => {
           <Route element={<SpaceTourism>{<Outlet />}</SpaceTourism>}>
             <Route element={<HomePage />} path="/" />
             {/* destination path */}
-            <Route element={<DestinationPages />} path="/destination">
-              <Route index element={<MoonPages />} /> {/* Removed /destination from the path */}
-              <Route element={<MoonPages />} path="moon" />
-              <Route element={<MarsPages />} path="mars" /> {/* Removed /destination from the path */}
-              <Route element={<EuropaPages />} path="europa" /> {/* Removed /destination from the path */}
-              <Route element={<TitanPages />} path="titan" /> {/* Removed /destination from the path */}
-            </Route>
+            <Route element={<DestinationPages />} path="/destination" />
             <Route element={<CrewPages />} path="/crew" />
             <Route element={<TechnologyPages />} path="/technology" />
           </Route>

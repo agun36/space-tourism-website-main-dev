@@ -1,61 +1,56 @@
-import { NavLink, Outlet, useLocation } from "react-router-dom";
-import { useContext, useEffect } from "react";
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { useContext, useState } from "react";
 import { DestinationContext } from "../contents/destinationContext";
-import { Data } from "../utils/data";
 import { Navigation } from "../components/navigation";
-
-
+import { DestinationPagesReusable } from "./DestinationPagesReusable"; // import the component
+import { Data } from "../utils/data";
 export const DestinationPages = () => {
-    const { destination, setDestination } = useContext(DestinationContext);
-    const location = useLocation();
-    useEffect(() => {
-        setDestination(0);
-    })
+    const { setDestination } = useContext(DestinationContext);
+    const [selectedDestination, setSelectedDestination] = useState(0); // set initial state to 0
+
+    function handleSelect(selectedButton: any) {
+        setSelectedDestination(selectedButton);
+        setDestination(selectedButton);
+    }
+
     return (
-        <div className=" destination  px-8 d-flex flex-column min-vh-100">
-            <div className="mt-md-10">
+        <div className="destination px-8 d-flex flex-column min-vh-100">
+            <div className="mt-md-5">
                 <Navigation />
             </div>
-            <div className="d-flex flex-column justify-content-center align-items-center  gap-8">
-                <div className="destination-head mt-5 me-md-auto ">
+            <div className="row  ">
+                <div className="destination-head d-flex justify-content-center justify-content-md-start  mt-5 col-12 ">
                     <h1 className="text-white-000 d-flex gap-2"><span className="opacity-50">01</span> pick your destination</h1>
                 </div>
-
-
-                <div className="destination-names d-flex flex-column flex-md-row flex-lg-row align-items-md-center align-items-lg-center justify-content-md-evenly justify-content-lg-evenly gap-md-9 gap-lg-9 ">
-                    <div className=" m-auto mt-8">
-                        <img src={Data.destinations[destination].images.webp} alt={Data.destinations[destination].name} />
+                <div className="destination-names container col-12 row align-items-md-center justify-content-center mt-md-8 mt-4">
+                    <div className="col-md-8">
+                        <img src={Data.destinations[selectedDestination].images.png} alt={Data.destinations[selectedDestination].name} className="img-fluid " />
                     </div>
-                    <nav className=" navbar  mt-8 mt-md-0 mt-lg-0  destination-nav-wrapper text-center text-md-start">
 
-                        <ul className="destination-nav d-flex mx-auto ms-md-0  nav-underline pl-0">
-                            <li className="nav-item">
-                                <NavLink
-                                    className={`nav-link ${destination === 0 || location.pathname === '/destination' ? 'active' : ''}`}
-                                    onClick={() => { setDestination(0) }}
-                                    to='moon'
+                    <nav className="navbar  destination-nav-wrapper  col-md-4 d-flex align-items-center justify-content-center ">
+                        <ul className="destination-nav row pl-0 col-7 me-md-auto">
+                            <li className="nav-item col">
+                                <button
+                                    className={`nav-link ${selectedDestination === 0 ? 'active' : ''}`}
+                                    onClick={() => handleSelect(0)}
                                 >
                                     Moon
-                                </NavLink>
+                                </button>
                             </li>
-                            <li className="nav-item">
-                                <NavLink className={`nav-link ${destination === 1 ? 'active' : ''}`} onClick={() => { setDestination(1) }} to='mars'>Mars</NavLink>
+                            <li className="nav-item col">
+                                <button className={`nav-link ${selectedDestination === 1 ? 'active' : ''}`} onClick={() => handleSelect(1)} >Mars</button>
                             </li>
-                            <li className="nav-item">
-                                <NavLink className={`nav-link ${destination === 2 ? 'active' : ''}`} onClick={() => { setDestination(2) }} to='europa'>Europa</NavLink>
+                            <li className="nav-item col">
+                                <button className={`nav-link ${selectedDestination === 2 ? 'active' : ''}`} onClick={() => handleSelect(2)} >Europa</button>
                             </li>
-                            <li className="nav-item">
-                                <NavLink className={`nav-link ${destination === 3 ? 'active' : ''}`} onClick={() => { setDestination(3) }} to='titan'>Titan</NavLink>
+                            <li className="nav-item col">
+                                <button className={`nav-link ${selectedDestination === 3 ? 'active' : ''}`} onClick={() => handleSelect(3)} >Titan</button>
                             </li>
                         </ul>
-                        <div className="container g-col-6">
-                            <Outlet />
-                        </div>
+                        <DestinationPagesReusable />
                     </nav>
-
                 </div>
             </div>
         </div>
-
     )
 }

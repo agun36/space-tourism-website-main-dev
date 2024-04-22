@@ -4,7 +4,7 @@ section {
     display: flex;
     // justify-content: center;
     flex-direction: column;
-    min-height: 100vh;
+    // min-height: 100vh;
 
     overflow: hidden;
 
@@ -13,7 +13,6 @@ section {
         .home {
             background-image: url(../../assets/images/home/background-home-desktop.jpg);
             background-size: cover;
-            // width: 100%;
             position: relative;
             z-index: 1;
 
@@ -95,9 +94,11 @@ section {
             background-size: cover;
 
             .destination-names {
-
                 .destination-nav-wrapper {
                     .destination-nav {
+
+                        display: flex;
+                        align-items: center;
                         color: $text-color ;
                         font-style: normal;
                         font-weight: 500;
@@ -105,16 +106,23 @@ section {
                         font-size: 2rem;
                         list-style-type: none;
 
-                        .nav-items {
+                        .nav-item {
                             text-decoration: none;
+
+                            .nav-link {
+
+                                &.active {
+                                    padding: 2rem 0;
+                                    border-bottom: 2px solid $white-000;
+                                    color: $text-color !important;
+                                }
+                            }
                         }
 
-                        .active {
-                            color: $text-color !important;
-                        }
                     }
 
                     .moon {
+
                         .moon-head {
                             font-size: $font-size-lg + 9rem;
                             letter-spacing: 2rem;
@@ -127,6 +135,10 @@ section {
                         }
 
                         .moon-avg {
+                            &.border-top {
+                                opacity: 50% !important;
+                            }
+
                             .moon-avg__distance {
                                 p {
                                     letter-spacing: .2rem;
@@ -171,7 +183,7 @@ section {
                     h1 {
                         opacity: 50%;
                         letter-spacing: .2rem;
-                        font-size: 4rem;
+                        // font-size: 4rem;
                         font-style: normal;
                         font-weight: 400;
                     }
@@ -184,7 +196,7 @@ section {
                     }
 
                     p {
-                        font-size: 2rem;
+
                         font-weight: 400;
                         letter-spacing: 0.2rem;
                         line-height: 2;
@@ -193,13 +205,13 @@ section {
 
                 .about-crew_dots {
                     .active {
-                        background-color: grey;
+                        background-color: $white-000;
                     }
 
                     span {
-                        height: 2rem;
-                        width: 2rem;
-                        background-color: $white-000;
+                        height: 1rem;
+                        width: 1rem;
+                        background-color: $dot-in-active-color;
                         border-radius: 50%;
                         cursor: pointer;
                         transition: all 0.5s ease-in-out;
@@ -207,10 +219,10 @@ section {
                         &::before {
                             content: "";
                             position: absolute;
-                            width: 2rem;
-                            height: 2rem;
+                            width: 1rem;
+                            height: 1rem;
                             border-radius: 50%;
-                            background: grey;
+                            background: $dot-in-active-color;
                             // z-index: -11;
 
                             opacity: 0;
@@ -230,12 +242,24 @@ section {
         .technology {
             background-image: url(../../assets/images/technology/background-technology-desktop.jpg);
             background-size: cover;
-            display: flex;
-            width: 100%;
 
 
 
             .about-technology {
+
+
+                .tech-picture {
+                    @media (min-width: 576px) and (max-width: 968.98px) {
+                        background-color: red;
+
+                        picture {
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+
                 .about-technology__text {
                     h1 {
                         opacity: 50%;
@@ -246,10 +270,10 @@ section {
                     }
 
                     h2 {
-                        font-size: 5rem;
-                        font-weight: 500;
+                        font-family: "Bellefair";
+                        font-weight: 400;
                         font-style: normal;
-                        letter-spacing: .2rem;
+                        font-size: 8rem;
                     }
 
                     p {
@@ -257,7 +281,6 @@ section {
                         font-weight: 400;
                         letter-spacing: 0.2rem;
                         line-height: 2;
-                        width: 50rem;
                     }
                 }
 
@@ -303,14 +326,6 @@ section {
                         }
                     }
                 }
-
-                // .tech-picture {
-                //     .pic {
-                //         // height: 100%;
-                //     }
-                // }
-
-
             }
         }
     }

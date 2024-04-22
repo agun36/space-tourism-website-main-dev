@@ -10,14 +10,14 @@ export const Navigation = () => {
     const [show, setShow] = useState(false);
     return (
         <nav className="navbar nav-layout">
-            <div className=" navigate container-fluid d-flex align-items-center align-items-md-baseline gap-5">
+            <div className=" navigate container-fluid container-fluid-md d-flex align-items-center align-items-md-baseline gap-">
                 <div className='logo-link  position-relative'>
                     <NavLink className="navbar-brand" to="/"><img src={logo} alt='showing star' /></NavLink>
                 </div>
 
-                {show ? <FontAwesomeIcon icon={faTimes} className="hamburger d-lg-none " onClick={() => setShow(false)} /> : <FontAwesomeIcon icon={faBars} className="hamburger d-xxxl-none d-lg-none" onClick={() => setShow(true)} />}
+                {show ? <FontAwesomeIcon icon={faTimes} className="hamburger d-sm-none d-md-none " onClick={() => setShow(false)} /> : <FontAwesomeIcon icon={faBars} className="hamburger d-xxxl-none d-md-none d-sm-none" onClick={() => setShow(true)} />}
 
-                <div className="d-none d-lg-block nav-layout__wrapper">
+                <div className="d-none d-sm-block d-md-block  nav-layout__wrapper">
                     <Nav className="justify-content-end nav-underline nav-layout__wrapper__nav ">
                         <Nav.Item className=' nav-layout__wrapper__nav__item  white-00'>
                             <NavLink className="nav-layout__wrapper__nav__item nav-link" aria-current="page" to='/'>00 Home</NavLink>
