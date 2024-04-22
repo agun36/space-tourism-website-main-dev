@@ -5,7 +5,7 @@ import { Navigation } from '../components/navigation';
 export const HomePage = () => {
 
     return (
-        <div className='home  px-8 d-flex flex-column min-vh-100'>
+        <div className='home  d-flex flex-column  px-md-4 px-sm-0 min-vh-100'>
             <div className='mt-md-5'>
                 <Navigation />
             </div>
