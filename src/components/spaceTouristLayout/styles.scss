@@ -121,53 +121,21 @@ section {
 
                     }
 
-                    .moon {
+                }
 
-                        .moon-head {
-                            font-size: $font-size-lg + 9rem;
-                            letter-spacing: 2rem;
-                            font-weight: 700;
-                        }
-
-                        .moon-about {
-                            letter-spacing: .2rem;
-                            line-height: 2;
-                        }
-
-                        .moon-avg {
-                            &.border-top {
-                                opacity: 50% !important;
-                            }
-
-                            .moon-avg__distance {
-                                p {
-                                    letter-spacing: .2rem;
-                                    text-transform: uppercase;
-                                }
-
-                                h2 {
-                                    font-size: $font-size-lg + 1rem;
-                                }
-                            }
-
-                            .moon-avg__travel {
-
-                                // h4 {
-                                //     font-size: $font-size-lg + 1rem;
-                                // }
-                                p {
-                                    letter-spacing: .2rem;
-                                    text-transform: uppercase;
-                                }
-
-                                h3 {
-                                    font-style: normal;
-                                    font-size: $font-size-lg + 1rem;
-                                }
-                            }
-                        }
+                .moon-about {
+                    h1 {
+                        font-family: "Bellefair";
+                        font-size: 15rem;
+                        font-weight: 400;
+                        font-style: normal;
                     }
 
+                    @media (min-width: 576px) and (max-width: 768.98px) {
+                        /* styles for tablets go here */
+                        width: 60%;
+                        margin: auto;
+                    }
                 }
 
             }
