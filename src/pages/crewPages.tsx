@@ -11,7 +11,7 @@ export const CrewPages = () => {
     };
 
     return (
-        <div className='crew d-flex flex-column  px-md-4 px-sm-0 min-vh-100'>
+        <div className='crew d-flex flex-column  px-md-4 px-sm-0 min-vh-100 max-vh-auto'>
 
             <div className='mt-sm-0 mt-md-5 px-4'>
                 <Navigation />
