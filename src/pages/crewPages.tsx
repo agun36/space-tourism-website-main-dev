@@ -13,11 +13,11 @@ export const CrewPages = () => {
     return (
         <div className='crew row row-cols-lg-2  px-md-4 px-sm-0 min-vh-100'>
 
-            <div className='mt-sm-0 mt-md-5 px-4 col-12 col-lg-12'>
+            <div className='mt-sm-0 mt-md-5  px-4 col-12 col-lg-12'>
                 <Navigation />
             </div>
             <div className="col-12 col-lg-12 row row-cols-lg-1    flex-lg-column align-items-center justify-content-md-center   mx-auto">
-                <div className='mt-8 mt-md-8 col-12 d-flex justify-content-center justify-content-sm-start justify-content-md-start px-4'>
+                <div className='mt-8 mt-md-8 mt-lg-3 col-12 d-flex justify-content-center justify-content-sm-start justify-content-md-start px-4'>
                     <h1 className='text-white-000 d-flex gap-3 text-uppercase'><span className='opacity-50'>00</span>meet your crew</h1>
                 </div>
                 <div className="mt-5 about-crew col-12 flex-lg-row row align-items-center justify-content-md-center  container">
