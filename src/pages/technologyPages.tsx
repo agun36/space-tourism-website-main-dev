@@ -11,12 +11,12 @@ export const TechnologyPages = () => {
     };
 
     return (
-        <div className='technology row row-cols-lg-2  flex-lg-column  px-md-4 px-sm-0 min-vh-100'>
+        <div className='technology row row-cols-lg-2  flex-lg-column  px-md-4 px-sm-0'>
             <div className='mt-sm-0 mt-md-5 px-4 col-12 col-lg-12'>
                 <Navigation />
             </div>
             <div className='col-12 col-lg-12 row row-cols-lg-1    flex-lg-column align-items-center justify-content-md-center   mx-auto my-lg-8'>
-                <div className='text-white-000 my-8 my-md-8 my-lg-0  col-12 col-lg-12 d-flex  justify-content-center justify-content-sm-start justify-content-md-start '>
+                <div className='text-white-000 my-8 my-md-8 my-lg-0  col-12 col-lg-12 d-flex  justify-content-center justify-content-sm-start justify-content-md-start bg-lg-danger p-lg-5'>
                     <h1 className='d-flex gap-2'><span className='opacity-50'>03</span>Technology Pages</h1>
                 </div>
                 <div className="about-technology col-12 col-lg-12 flex-lg-row   row row-sm-col-1 align-items-sm-center justify-content-sm-center me-md-auto my-lg-8 ">

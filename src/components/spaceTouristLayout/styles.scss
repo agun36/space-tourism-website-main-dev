@@ -15,12 +15,8 @@ section {
             background-size: cover;
             position: relative;
             z-index: 1;
-            min-height: 100vh;
 
-            @media (min-width: 1080px) and (max-width: 2340px) {
-                flex-direction: column;
-                min-height: 100vh;
-            }
+
 
             .home-wrapper-about {
                 @media (min-width: 1080px) and (max-width: 2340px) {
