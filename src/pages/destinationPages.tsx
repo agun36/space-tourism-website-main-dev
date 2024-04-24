@@ -28,7 +28,7 @@ export const DestinationPages = () => {
                     </div>
 
                     <nav className="navbar  destination-nav-wrapper  col-md-4 d-flex align-items-center justify-content-center ">
-                        <ul className="destination-nav row pl-0 col-7 me-md-auto">
+                        <ul className="destination-nav row pl-0  me-md-auto">
                             <li className="nav-item col">
                                 <button
                                     className={`nav-link ${selectedDestination === 0 ? 'active' : ''}`}
