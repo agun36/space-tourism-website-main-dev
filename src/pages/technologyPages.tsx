@@ -16,7 +16,7 @@ export const TechnologyPages = () => {
                 <Navigation />
             </div>
             {/* second column */}
-            <div className='col-12 col-lg-12 row row-cols-lg-1    flex-lg-column align-items-center justify-content-md-center   mx-auto my-lg-8'>
+            <div className='col-12 col-lg-12 row row-cols-lg-1    flex-lg-colum align-items-center justify-content-md-center   mx-auto my-lg-8'>
                 <div className='text-white-000 my-8 my-md-8 my-lg-0  col-12 col-lg-12 d-flex  justify-content-center justify-content-sm-start justify-content-md-start bg-lg-danger p-lg-5'>
                     <h1 className='d-flex gap-2'><span className='opacity-50'>03</span>Technology Pages</h1>
                 </div>
@@ -25,7 +25,7 @@ export const TechnologyPages = () => {
                     <div className='tech-picture  col-md-6 col-sm-12 ms-md-auto order-1 order-md-2 order-sm-2'>
                         <picture className='pic '>
                             <source srcSet={currentTechnology.images.landscape} media="(min-width: 768px)" />
-                            <img src={currentTechnology.images.portrait} alt="Technology" className='w-100 w-md-auto w-sm-wide ' />
+                            <img src={currentTechnology.images.portrait} alt="Technology" className=' w-md-auto w-sm-wide' />
                         </picture>
                     </div>
 
