@@ -34,13 +34,13 @@ export const Navigation = () => {
                     </Nav>
                 </div>
 
-                <div className={`offcanvas offcanvas-start ${show ? 'show' : ''}`} data-bs-scroll="true" tabIndex={-1} id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div className={`offcanvas offcanvas-end ${show ? 'show' : ''}`} data-bs-scroll="true" tabIndex={-1} id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                     <div className='offcanvas-header font-size-large text-white-000'>
                         <div className=''>Menu</div >
                         <Button type="button" className="btn-close bg-white-000 text-reset" data-bs-dismiss="offcanvas" aria-label="Close" onClick={() => setShow(false)}></Button>
                     </div>
                     <div className='offcanvas-body mt-8'>
-                        <Nav className="flex-column align-items-center justify-content-end ">
+                        <Nav className="flex-column align-items-start ps-5 justify-content-end ">
                             <Nav.Item className='nav-item'>
                                 <NavLink className="nav-link  font-size-large text-texts-color" aria-current="page" to='/'>00 Home</NavLink>
                             </Nav.Item>
