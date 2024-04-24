@@ -14,7 +14,7 @@ export const DestinationPages = () => {
     }
 
     return (
-        <div className="destination row row-cols-lg-2  flex-lg-column px-md-4 px-sm-0 min-vh-100">
+        <div className="destination row row-cols-lg-2  flex-lg-column px-md-4 px-sm-0">
             <div className="mt-sm-0 mt-md-5 px-4 col-12 col-lg-12">
                 <Navigation />
             </div>
@@ -23,7 +23,7 @@ export const DestinationPages = () => {
                     <h1 className="text-white-000 d-flex gap-2"><span className="opacity-50">01</span> pick your destination</h1>
                 </div>
                 <div className="destination-names col-12  row align-items-md-center justify-content-center mt-md-8 mt-4">
-                    <div className="col-md-8 d-flex align-items-sm-center justify-content-sm-center ">
+                    <div className="col-md-8 d-flex flex-lg-column align-items-sm-center justify-content-sm-center ">
                         <img src={Data.destinations[selectedDestination].images.png} alt={Data.destinations[selectedDestination].name} className="img-fluid " />
                     </div>
 
