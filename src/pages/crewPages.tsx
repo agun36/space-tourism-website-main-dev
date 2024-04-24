@@ -39,7 +39,7 @@ export const CrewPages = () => {
 
                     </div>
                     <div className='col-sm-12 col-md-7 d-flex justify-content-center'>
-                        <img src={currentCrew.images.png} alt="Crew member" className='min-vh-100 img-fluid' />
+                        <img src={currentCrew.images.png} alt="Crew member" className='min-vh-100' />
                     </div>
                 </div>
             </div>

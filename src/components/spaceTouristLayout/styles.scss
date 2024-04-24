@@ -237,10 +237,11 @@ section {
 
 
                 .tech-picture {
-                    @media (min-width: 576px) and (max-width: 968.98px) {
+                    @media (min-width: 576px) and (max-width: 1024px) {
                         picture {
                             img {
                                 width: 100%;
+                                min-height: 100vh !important;
                             }
                         }
                     }
@@ -260,6 +261,10 @@ section {
                         font-weight: 400;
                         font-style: normal;
                         font-size: 8rem;
+
+                        @media (min-width: 300px) and (max-width: 1200px) {
+                            font-size: 5rem;
+                        }
                     }
 
                     p {
