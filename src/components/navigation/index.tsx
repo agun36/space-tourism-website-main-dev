@@ -36,7 +36,6 @@ export const Navigation = () => {
 
                 <div className={`offcanvas offcanvas-end ${show ? 'show' : ''}`} data-bs-scroll="true" tabIndex={-1} id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                     <div className='offcanvas-header font-size-large text-white-000'>
-                        <div className=''>Menu</div >
                         <Button type="button" className="btn-close bg-white-000 text-reset" data-bs-dismiss="offcanvas" aria-label="Close" onClick={() => setShow(false)}></Button>
                     </div>
                     <div className='offcanvas-body mt-8'>
