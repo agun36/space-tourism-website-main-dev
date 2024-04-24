@@ -14,11 +14,11 @@ export const DestinationPages = () => {
     }
 
     return (
-        <div className="destination d-flex flex-column  px-md-4 px-sm-0 min-vh-100">
-            <div className="mt-sm-0 mt-md-5 px-4">
+        <div className="destination row row-cols-lg-2  flex-lg-column px-md-4 px-sm-0 min-vh-100">
+            <div className="mt-sm-0 mt-md-5 px-4 col-12 col-lg-12">
                 <Navigation />
             </div>
-            <div className="row  align-items-center justify-content-center  justify-content-md-center  mx-auto ">
+            <div className="col-12 col-lg-12 row row-cols-lg-1    flex-lg-colum align-items-center justify-content-md-center   mx-auto my-lg-8 ">
                 <div className="destination-head my-8 mt-md-8 col-12  d-flex justify-content-center justify-content-sm-start justify-content-md-start px-4  d-flex justify-content-center align-items-center">
                     <h1 className="text-white-000 d-flex gap-2"><span className="opacity-50">01</span> pick your destination</h1>
                 </div>
