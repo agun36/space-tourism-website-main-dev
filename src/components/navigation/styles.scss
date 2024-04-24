@@ -12,10 +12,21 @@
             -o-backdrop-filter: blur(10px) brightness(0.7);
             -ms-backdrop-filter: blur(10px) brightness(0.7);
             backdrop-filter: blur(10px) brightness(0.7);
-            padding-top: 2rem;
-            padding-bottom: 2rem;
+
+
+
 
             .nav-layout__wrapper__nav__item {
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+                display: flex;
+                align-items: center;
+
+                &:hover {
+                    border-bottom: 2px solid $white-000;
+                    cursor: pointer;
+                }
+
                 .nav-link {
                     color: $white-000;
                     font-size: 2rem;
@@ -25,23 +36,19 @@
                     padding-left: 1rem;
                     padding-right: 1rem;
 
+
                     @media (min-width: 576px) and (max-width: 768.98px) {
                         /* styles for tablets go here */
                         font-size: 1.3rem;
                         font-weight: 300;
                     }
 
-                    &:hover {
-                        color: $white-000;
-                    }
+
 
                     &.active {
                         color: $white-000 !important;
                     }
 
-                    &:visited {
-                        color: $white-000;
-                    }
                 }
 
             }

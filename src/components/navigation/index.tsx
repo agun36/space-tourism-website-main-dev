@@ -18,9 +18,9 @@ export const Navigation = () => {
                 {show ? <FontAwesomeIcon icon={faTimes} className="hamburger d-sm-none d-md-none " onClick={() => setShow(false)} /> : <FontAwesomeIcon icon={faBars} className="hamburger d-xxxl-none d-md-none d-sm-none" onClick={() => setShow(true)} />}
 
                 <div className="d-none d-sm-block d-md-block  nav-layout__wrapper">
-                    <Nav className="justify-content-end nav-underline nav-layout__wrapper__nav ">
+                    <Nav className="justify-content-end nav-layout__wrapper__nav ">
                         <Nav.Item className=' nav-layout__wrapper__nav__item  white-00'>
-                            <NavLink className="nav-layout__wrapper__nav__item nav-link" aria-current="page" to='/'>00 Home</NavLink>
+                            <NavLink className="nav-link" aria-current="page" to='/'>00 Home</NavLink>
                         </Nav.Item>
                         <Nav.Item className='nav-layout__wrapper__nav__item'>
                             <NavLink className="nav-link" to='/destination'>01 Destination</NavLink>
@@ -40,7 +40,7 @@ export const Navigation = () => {
                         <Button type="button" className="btn-close bg-white-000 text-reset" data-bs-dismiss="offcanvas" aria-label="Close" onClick={() => setShow(false)}></Button>
                     </div>
                     <div className='offcanvas-body mt-8'>
-                        <Nav className="flex-column align-items-center justify-content-end nav-underline ">
+                        <Nav className="flex-column align-items-center justify-content-end ">
                             <Nav.Item className='nav-item'>
                                 <NavLink className="nav-link  font-size-large text-texts-color" aria-current="page" to='/'>00 Home</NavLink>
                             </Nav.Item>
