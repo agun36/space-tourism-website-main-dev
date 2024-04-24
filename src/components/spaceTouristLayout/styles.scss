@@ -233,7 +233,9 @@ section {
             }
 
             .about-technology {
-
+                @media (min-width: 300px) and (max-width: 1200px) {
+                    margin-bottom: 10rem;
+                }
 
                 .tech-picture {
                     picture {
