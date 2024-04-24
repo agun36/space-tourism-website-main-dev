@@ -237,12 +237,9 @@ section {
 
 
                 .tech-picture {
-                    @media (min-width: 576px) and (max-width: 1024px) {
-                        picture {
-                            img {
-                                width: 100%;
-                                min-height: 100vh !important;
-                            }
+                    picture {
+                        img {
+                            min-height: 50vh !important;
                         }
                     }
                 }

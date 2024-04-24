@@ -24,7 +24,7 @@ export const TechnologyPages = () => {
                     <div className='tech-picture  col-md-6 col-sm-12 ms-md-auto order-1 order-md-2 order-sm-2'>
                         <picture className='pic '>
                             <source srcSet={currentTechnology.images.landscape} media="(min-width: 768px)" />
-                            <img src={currentTechnology.images.portrait} alt="Technology" className='w-100 w-md-auto w-sm-wide min-vh-50' />
+                            <img src={currentTechnology.images.portrait} alt="Technology" className='w-100 w-md-auto w-sm-wide ' />
                         </picture>
                     </div>
 
