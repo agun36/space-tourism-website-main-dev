@@ -228,6 +228,9 @@ section {
             background-size: cover;
             min-height: 100vh;
 
+            @media (min-width: 300px) and (max-width: 1200px) {
+                min-height: calc(100vh + 4rem);
+            }
 
             .about-technology {
 
