@@ -7,13 +7,10 @@
     .nav-layout__wrapper {
 
         .nav-layout__wrapper__nav {
-            -webkit-backdrop-filter: blur(10px) brightness(0.7);
-            -moz-backdrop-filter: blur(10px) brightness(0.7);
-            -o-backdrop-filter: blur(10px) brightness(0.7);
-            -ms-backdrop-filter: blur(10px) brightness(0.7);
-            backdrop-filter: blur(10px) brightness(0.7);
-
-
+            background-image: url(../../assets/images/home/background-home-mobile.jpg);
+            background-size: cover;
+            background-position: center;
+            filter: blur(.1rem);
 
 
             .nav-layout__wrapper__nav__item {
