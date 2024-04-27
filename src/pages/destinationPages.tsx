@@ -19,7 +19,7 @@ export const DestinationPages = () => {
                 <Navigation />
             </div>
             <div className="col-12 col-lg-12 row row-cols-lg-1    flex-lg-column align-items-center justify-content-md-center   mx-auto  ">
-                <div className="destination-head text-uppercase  col-12 col-lg-12 d-flex justify-content-center justify-content-sm-start justify-content-md-start px-4  d-flex justify-content-center align-items-center">
+                <div className="destination-head text-uppercase mt-8 mt-md-8 mt-lg-3 col-12 col-lg-12 d-flex justify-content-center justify-content-sm-start justify-content-md-start px-4  d-flex justify-content-center align-items-center">
                     <h1 className="text-white-000 d-flex gap-2"><span className="opacity-50">01</span> pick your destination</h1>
                 </div>
                 <div className="destination-names col-12 col-lg-12  row flex-lg-row align-items-md-center justify-content-center mt-md-8 mt-4">

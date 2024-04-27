@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { Button, Nav } from 'react-bootstrap';
+import { Nav } from 'react-bootstrap';
 import logo from '../../assets/images/shared/logo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
@@ -36,7 +36,7 @@ export const Navigation = () => {
 
                 <div className={`offcanvas offcanvas-end ${show ? 'show' : ''}`} data-bs-scroll="true" tabIndex={-1} id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                     <div className='offcanvas-header font-size-large text-white-000'>
-                        <Button type="button" className="btn-close bg-white-000 text-reset" data-bs-dismiss="offcanvas" aria-label="Close" onClick={() => setShow(false)}></Button>
+                        <FontAwesomeIcon icon={faTimes} className="hamburger ms-auto " onClick={() => setShow(false)} />
                     </div>
                     <div className='offcanvas-body mt-8'>
                         <Nav className="flex-column align-items-start ps-5 justify-content-end ">
